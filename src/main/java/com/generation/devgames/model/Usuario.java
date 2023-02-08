@@ -40,7 +40,7 @@ public class Usuario {
 
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
-	private List<Categoria> categoria;
+	private List<Produto> produto;
 
 	/* Insira os Getters and Setters */
 
@@ -84,12 +84,12 @@ public class Usuario {
 		this.foto = foto;
 	}
 
-	public List<Categoria> getPostagem() {
-		return this.categoria;
+	public List<Produto> getPostagem() {
+		return this.produto;
 	}
 
-	public void setPostagem(List<Categoria> categoria) {
-		this.categoria = categoria;
+	public void setPostagem(List<Produto> produto) {
+		this.produto = produto;
 	}
 	
 
