@@ -33,13 +33,13 @@ public class Produto {
 	@NumberFormat(style = Style.CURRENCY)
 	private float valor;
 
-	private String classificacao;
 	@NotBlank(message = "O atributo classificação é obrigatorio!")
 	@Size(min = 5, max = 100, message = "O atributo fornecedor deve conter no minimo 05 caracteres")
+	private String classificacao;
 	
-	private String console;
 	@NotBlank(message = "O atributo console é obrigatorio!")
 	@Size(min = 2, max = 100, message = "O atributo lote deve conter no minimo 02 caracteres")
+	private String console;
 	
 	@DateTimeFormat(pattern="DD-MM-YYYY")
 	private LocalDateTime lancamento;
